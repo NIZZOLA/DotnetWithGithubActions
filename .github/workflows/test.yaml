@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.302'  # Ajuste para a versão do .NET usada no projeto
+        dotnet-version: '8.0.x'  # Ajuste para a versão do .NET usada no projeto
 
     - name: Restore dependencies
       run: dotnet restore src/NizzolaActions/Nizzola.Domain.Tests/Nizzola.Domain.Tests.csproj
